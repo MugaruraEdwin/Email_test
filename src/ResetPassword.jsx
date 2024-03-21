@@ -32,30 +32,6 @@ function ResetPassword() {
             return;
         }
 
-    //     axios.post('http://localhost:3001/reset-password', { email, currentPassword, newPassword })
-    //     .then(response => {
-    //         if (response.data.success) {
-    //             setSuccess(true); // Password reset successful
-    //             setError('');
-    //         } else {
-    //             // Check for specific error messages
-    //             if (response.status === 404) {
-    //                 setError('Email does not match any existing credentials.');
-    //             } else if (response.status === 401) {
-    //                 setError('Incorrect current password.');
-    //             } else {
-    //                 setError('An error occurred. Please try again later.');
-    //             }
-    //             setSuccess(false);
-    //         }
-    //     })
-    //     .catch(err => {
-    //         setError("Consider re-checking input details and try again.");
-    //         console.error("Error:", err);
-    //         setSuccess(false);
-    //     });
-    // };
-
     axios.post('http://localhost:3001/reset-password', { email, currentPassword, newPassword })
     .then(response => {
         if (response.data.success) {
@@ -88,6 +64,7 @@ function ResetPassword() {
     }
     return (
         <div className='login'>
+            <h3>Reset Password</h3>
             <form id="login-form" onSubmit={handleSubmit}>
                 {error && <p style={{ color: 'red' }}>{error}</p>}
                 {success && <p style={{ color: 'green' }}>Password reset successful!</p>}
