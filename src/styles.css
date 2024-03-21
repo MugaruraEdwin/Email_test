@@ -1,0 +1,40 @@
+*{
+    margin: 0;
+}
+
+
+.login{
+    border: 1px groove;
+    /* padding-right: 500px; */
+    margin-top: 250px;
+    margin-left: 100px;
+    width: 30%;
+}
+form{
+    display:block;
+    align-items: center;
+}
+ h3{
+    margin-top: 10px;
+    margin-left: 38px;
+ }
+ p{
+    margin-top: 10px;
+    margin-left: 38px;
+ }
+
+label{
+    margin-left: 40px;
+    margin-right: 20px;
+    margin-top: 20px;
+}
+
+.email_label{
+    margin-left:35px ;
+}
+
+button{
+    margin-left: 94px;
+    margin-top: 20px;
+    margin-bottom: 10px;
+}
